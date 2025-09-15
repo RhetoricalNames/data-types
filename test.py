@@ -31,12 +31,18 @@ elif temp == 68: #'elif' is 'else if'
 else:
     print('cold') """
 
-number_finder = input("Input a number")
-if number_finder % 2 == 0:
-    print(even)
-    else
+""" number_finder = input("Input a number")
+if int(number_finder) % 2 == 0:
+    print("even")
+else:
+    print("odd") """
 
-
+bill = input("What's the bill?")
+service = input("How was the service? Bad, okay, good, or great?")
+if service == "bad":
+    print(int(bill))
+elif service == "okay":
+    print()
 
 """ day_of_week = input("what day is it? ")
 if day_of_week == "Friday":
