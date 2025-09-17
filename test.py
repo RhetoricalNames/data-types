@@ -64,13 +64,19 @@ elif x == 4:
     print("x is 4")
 elif x == 1:
     print("x = 1") """
-factor = 2
+
+""" factor = 2
 factorlist = [1]
 number = input("Input a number")
 number = int(number)
-for i in range(number):
-    if (number % factor) == 0:
-            newfactortolist = [factor]
-            factorlist.append(newfactortolist)
-    factor = factor + 1
-print(factorlist)
+if number > 100000000:
+     print("Number too big!")
+     quit()
+else:
+    for i in range(number):
+        if (number % factor) == 0:
+                newfactortolist = [factor]
+                factorlist.append(newfactortolist)
+        factor = factor + 1
+print(factorlist) """
+
