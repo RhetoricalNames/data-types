@@ -64,13 +64,13 @@ elif x == 4:
     print("x is 4")
 elif x == 1:
     print("x = 1") """
-
+factor = 2
+factorlist = [1]
 number = input("Input a number")
 number = int(number)
-for i in range(factor):
-    factor = 2
+for i in range(number):
     if (number % factor) == 0:
-        factorlist = [factor]
+            newfactortolist = [factor]
+            factorlist.append(newfactortolist)
     factor = factor + 1
-onelist = [1]
-print(onelist + factorlist)
+print(factorlist)
