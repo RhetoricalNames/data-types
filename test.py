@@ -81,16 +81,18 @@ else:
 print(factorlist) """
 
 factor = 2
-factorlist = [2]
-numbers = input("Input two numbers")
-numbers = numbers.split( )
-number1 = numbers[0]
-number2 = numbers[1]
+factorlist = [1]
+number1 = input("Input a number")
+number2 = input("Input another number")
 number1 = int(number1)
 number2 = int(number2)
-for i in range(number1 + number2):
-    if (number1 % factor == 0) and (number2 % factor == 0):
-            newhighestfactortolist = [factor]
-            factorlist[0] = (newhighestfactortolist)
-    factor = factor + 1
-print(factorlist)
+if number1 or number2 > 100000000:
+     print("Numbers too big!")
+     quit()
+else:
+    for i in range(number1 + number2):
+        if (number1 % factor == 0) and (number2 % factor == 0):
+                newhighestfactortolist = [factor]
+                factorlist[0] = (newhighestfactortolist)
+        factor = factor + 1
+    print(f"The factor of {number1} and {number2} is {factorlist}")
