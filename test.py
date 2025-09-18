@@ -80,3 +80,17 @@ else:
         factor = factor + 1
 print(factorlist) """
 
+factor = 2
+factorlist = [2]
+numbers = input("Input two numbers")
+numbers = numbers.split( )
+number1 = numbers[0]
+number2 = numbers[1]
+number1 = int(number1)
+number2 = int(number2)
+for i in range(number1 + number2):
+    if (number1 % factor == 0) and (number2 % factor == 0):
+            newhighestfactortolist = [factor]
+            factorlist[0] = (newhighestfactortolist)
+    factor = factor + 1
+print(factorlist)
