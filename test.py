@@ -80,19 +80,15 @@ else:
         factor = factor + 1
 print(factorlist) """
 
-factor = 2
+factor = 1
 factorlist = [1]
 number1 = input("Input a number")
 number2 = input("Input another number")
 number1 = int(number1)
 number2 = int(number2)
-if number1 or number2 > 100000000:
-     print("Numbers too big!")
-     quit()
-else:
-    for i in range(number1 + number2):
-        if (number1 % factor == 0) and (number2 % factor == 0):
-                newhighestfactortolist = [factor]
-                factorlist[0] = (newhighestfactortolist)
-        factor = factor + 1
-    print(f"The factor of {number1} and {number2} is {factorlist}")
+for i in range(number1 + number2):
+    if (number1 % factor == 0) and (number2 % factor == 0):
+            newhighestfactortolist = [factor]
+            factorlist[0] = (newhighestfactortolist)
+    factor = factor + 1
+print(f"The GCF of {number1} and {number2} is {factorlist}")
