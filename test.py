@@ -4,8 +4,8 @@ for i in values:
     print(i)
     print(values[0])
 print(values[6]) """
-def message(input):
-    print(input)
+""" def message(input):
+    print(input) """
 
 """ x = "this is a thing"
 y= x.split( )
@@ -88,7 +88,7 @@ number1 = int(number1)
 number2 = int(number2)
 for i in range(number1 + number2):
     if (number1 % factor == 0) and (number2 % factor == 0):
-            newhighestfactortolist = [factor]
-            factorlist[0] = (newhighestfactortolist)
+            newhighestfactortolist = factor
+            factorlist[0] = newhighestfactortolist
     factor = factor + 1
 print(f"The GCF of {number1} and {number2} is {factorlist}")
